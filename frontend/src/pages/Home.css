@@ -1,0 +1,333 @@
+/* Home.css */
+
+
+  /* Description container styles */
+  .description-container {
+    max-width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .description-item p {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+
+  .description-item {
+    flex: 1; /* Each item takes up equal space */
+    max-width: 300px; /* Maximum width of each item */
+  }
+
+  .intro-container {
+    text-align: center;
+    padding: 3rem 2rem;
+    background-color: #f0f8ff;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+  .description-container {
+   
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    gap: 20px; /* Spacing between items */
+  }
+
+  /* Home.css */
+
+/* Container styles */
+.content {
+    padding: 100px; /* Adjust for the footer height */
+  }
+  
+  /* Description container styles */
+  .description-container {
+    max-width: 800px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    gap: 20px; /* Spacing between items */
+  }
+  
+  /* Description item styles */
+  .description-item {
+    max-width: 2000px;
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Center the text */
+
+  }
+  
+  /* Footer styles */
+  .footer {
+
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px; /* Adjust height as needed */
+    background-color: #0056b3; /* Dark green */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto;
+  }
+
+  .footer {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 767px) {
+    .description-container {
+      padding: 20px 10px;
+    }
+  }
+
+
+.content {
+  padding: 20px;
+}
+
+.description-item {
+  margin-top: 20px;
+}
+
+
+.horizontal-scroll-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.horizontal-scroll-container {
+  display: flex;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: calc(100% - 80px); /* Adjusting for arrow space */
+  margin: 0 40px;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.arrow-left {
+  left: 0;
+}
+
+.arrow-right {
+  right: 0;
+}
+
+.rice-item {
+  min-width: 200px;
+  flex-shrink: 0;
+ 
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #fff;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.rice-item img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rice-item h2 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Vision and Mission Section */
+.vision-mission-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  gap: 2rem;
+}
+
+/* Card Styles */
+.vision-card,
+.mission-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  position: relative; /* Enable positioning for the image */
+  width: 45%;
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vision-card:hover,
+.mission-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Titles */
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Image Styling */
+.vision-image,
+.mission-image {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vision-mission-container {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .vision-card,
+  .mission-card {
+      width: 100%;
+  }
+
+  .vision-image,
+  .mission-image {
+      width: 60px;
+      height: 60px;
+  }
+}
+
+/* Events and Calendar Section */
+.events-calendar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 2rem;
+  background-color: #f4f4f4;
+  gap: 2rem;
+}
+
+/* Events Card */
+.events-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 45%;
+}
+
+.events-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.events-list li {
+  margin-bottom: 0.5rem;
+}
+
+.view-more-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Calendar Card */
+.calendar-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 45%;
+  text-align: center;
+}
+
+.calendar-embed iframe {
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .events-calendar-container {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+
+  .events-card,
+  .calendar-card {
+      width: 100%;
+  }
+}
+

@@ -1,0 +1,44 @@
+/* Container for the button list */
+.list-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* List styles */
+.button-list {
+  list-style-type: none;  /* Remove default bullet points */
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Styling for individual list items */
+.button-list li {
+  width: 100%; /* Ensure the button takes the full width of the list item */
+}
+
+/* Styling for the buttons */
+.b1 {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Make button width responsive */
+  transition: background-color 0.3s;
+}
+
+.b1:hover {
+  background-color: #455aa0;  /* Darker blue on hover */
+}
+
+/* Text color */
+.text-white {
+  color: white;
+}

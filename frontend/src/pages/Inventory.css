@@ -1,0 +1,153 @@
+/* Inventory Page Container */
+.inventory-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Page Title */
+.inventory-container h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Message Display */
+.inventory-container .message {
+    background-color: #e0f7fa;
+    color: #00695c;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+/* Inventory Form Styles */
+.inventory-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.inventory-container form input,
+.inventory-container form select,
+.inventory-container form button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.inventory-container form input[type="number"] {
+    width: 100px;
+}
+
+.inventory-container form select {
+    min-width: 160px;
+}
+
+.inventory-container form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.inventory-container form button:hover {
+    background-color: #0056b3;
+}
+
+/* Inventory Table Styles */
+.inventory-container table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.inventory-container th, 
+.inventory-container td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.inventory-container th {
+    background-color: #007bff;
+    color: white;
+}
+
+.inventory-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.inventory-container td {
+    text-align: center;
+}
+
+/* Inventory Action Buttons */
+.inventory-container button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Inventory Filter Container */
+.inventory-container .filter-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.inventory-container .filter-container input, 
+.inventory-container .filter-container select {
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Responsive Design for Inventory Page */
+@media (max-width: 768px) {
+    .inventory-container form {
+        flex-direction: column;
+    }
+
+    .inventory-container form input,
+    .inventory-container form select,
+    .inventory-container form button {
+        width: 100%;
+    }
+
+    .inventory-container table {
+        font-size: 14px;
+    }
+
+    .inventory-container td, 
+    .inventory-container th {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-container h1 {
+        font-size: 18px;
+    }
+
+    .inventory-container table {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+}
+
+
+

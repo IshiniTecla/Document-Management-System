@@ -1,0 +1,72 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styling */
+.policy-container,
+.terms-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px 30px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.policy-container + .terms-container {
+  margin-top: 20px;
+}
+
+/* Headers */
+.policy-container h1,
+.terms-container h1 {
+  text-align: center;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #495057;
+}
+
+/* Paragraphs */
+p {
+  line-height: 1.6;
+  color: #6c757d;
+  margin: 10px 0;
+}
+
+/* Lists */
+ul {
+  margin-left: 20px;
+  padding-left: 20px;
+  color: #6c757d;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .policy-container,
+  .terms-container {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
